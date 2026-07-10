@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_upload_mcq_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload MCQ Tests"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_mcq_subject"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_mcq_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Test Name"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_mcq_description"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="Test Description"
+        android:gravity="top|start"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_mcq_duration"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Duration (in minutes)"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <Button
+        android:id="@+id/btn_add_questions"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Add Questions"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/primary" />
+
+    <Button
+        android:id="@+id/btn_upload_mcq"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Upload Test"
+        android:textColor="@color/white"
+        android:background="@drawable/button_primary_shape" />
+
+</LinearLayout>

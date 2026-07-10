@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subjects">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Mathematics</item>
+        <item>Biology</item>
+    </string-array>
+
+    <string-array name="text_sizes">
+        <item>Small (12sp)</item>
+        <item>Normal (14sp)</item>
+        <item>Large (16sp)</item>
+        <item>Extra Large (18sp)</item>
+    </string-array>
+
+    <integer-array name="text_size_values">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+    </integer-array>
+
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="time_durations">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+</resources>

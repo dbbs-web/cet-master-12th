@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Display Settings">
+        <SwitchPreferenceCompat
+            android:key="dark_mode"
+            android:title="Dark Mode"
+            android:summary="Enable dark theme" />
+
+        <ListPreference
+            android:key="text_size"
+            android:title="Text Size"
+            android:entries="@array/text_sizes"
+            android:entryValues="@array/text_size_values"
+            android:defaultValue="14" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notification Settings">
+        <SwitchPreferenceCompat
+            android:key="enable_notifications"
+            android:title="Enable Notifications"
+            android:summary="Receive app notifications"
+            android:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            android:key="announcement_notifications"
+            android:title="Announcement Notifications"
+            android:summary="Notify about announcements" />
+
+        <SwitchPreferenceCompat
+            android:key="test_reminders"
+            android:title="Test Reminders"
+            android:summary="Get reminders for upcoming tests" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Content Settings">
+        <SwitchPreferenceCompat
+            android:key="auto_download"
+            android:title="Auto Download"
+            android:summary="Download content automatically" />
+
+        <SwitchPreferenceCompat
+            android:key="offline_mode"
+            android:title="Offline Mode"
+            android:summary="Use downloaded content offline" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="app_version"
+            android:title="App Version"
+            android:summary="1.0.0" />
+
+        <Preference
+            android:key="about_app"
+            android:title="About CET Master 12th"
+            android:summary="Your Complete Study Companion" />
+    </PreferenceCategory>
+</PreferenceScreen>

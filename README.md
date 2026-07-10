@@ -1,117 +1,264 @@
-# CET Master 12th - Android Education App
+# CET Master 12th - Complete Project Setup
 
-एक व्यापक शैक्षणिक Android अ्यॅप जो 12वीच्या विद्यार्थ्यांसाठी तयार केले आहे।
+## Project Overview
 
-## 📱 Features
+**CET Master 12th** is a comprehensive Android application designed for students preparing for competitive entrance exams. The app provides study materials, practice tests, and performance tracking in a user-friendly interface.
 
-### 👤 User Panel
-- **Dashboard**: सर्व विषयांचा overview
-- **Subjects**: Physics, Chemistry, Mathematics, Biology
-- **Chapter-wise Notes**: प्रत्येक अध्याय साठी विस्तृत नोट्स
-- **PDF Viewer**: नोट्स आणि प्रश्नपत्रिका पाहण्यासाठी
-- **Previous Year Papers**: मागील वर्षांचे प्रश्नपत्रिका
-- **MCQ Tests**: टाइमर सह व्यायाम
-- **Formula Sheets**: महत्वाचे गणितीय सूत्र
-- **Search**: संपूर्ण कंटेंटमध्ये शोध
-- **Bookmarks**: महत्वाचे आयटम सेव करा
-- **Downloads**: ऑफलाइन access
-- **Progress Tracking**: अभ्यास प्रगती
-- **Profile & Settings**: यूजर प्रबंधन
-- **Dark Mode**: रात्रीचा mode
-- **Notifications**: महत्वाचे updates
-- **Offline Caching**: Internet विना काम
+### Key Highlights
+- ✅ **Multi-subject support**: Physics, Chemistry, Mathematics, Biology
+- ✅ **Comprehensive features**: Notes, PDFs, MCQ tests, Previous papers
+- ✅ **Admin management**: Content uploads, user management, announcements
+- ✅ **Firebase integration**: Real-time database, authentication, storage
+- ✅ **Offline support**: Download and use content without internet
+- ✅ **Modern UI**: Material Design 3 with dark mode support
 
-### 👨‍💼 Admin Panel
-- **Upload Notes**: विषय आणि अध्याय अनुसार
-- **Upload PDFs**: प्रश्नपत्रिका आणि नोट्स
-- **Upload MCQs**: प्रश्नांसह उत्तरे
-- **Manage Users**: यूजर activity monitor
-- **Edit/Delete Content**: कंटेंट प्रबंधन
-- **Announcements**: महत्वाचे घोषणा
-
-## 🎨 Design & Technology
-
-- **UI**: Material Design 3 (Blue & White theme)
-- **Architecture**: MVVM + Repository Pattern
-- **Database**: Firebase Realtime Database
-- **Storage**: Firebase Cloud Storage
-- **Authentication**: Firebase Auth (User & Admin)
-- **Components**: RecyclerView, CardView, BottomNavigation
-- **Animations**: Smooth transitions & loading indicators
-- **Responsive**: सर्व डिवाइस साठी
-
-## 🛠️ Tech Stack
-
-- **Language**: Java (Android)
-- **IDE**: Sketchware Pro
-- **Backend**: Firebase
-- **UI Framework**: Material Design 3
-- **Database**: Firebase Realtime Database + Storage
-
-## 📦 Project Structure
+## Project Structure
 
 ```
 cet-master-12th/
 ├── swb-project/
-│   ├── project.json          # App metadata & config
-│   ├── view.json             # UI screens
-│   ├── logic.json            # Business logic
-│   ├── event.json            # Event handlers
-│   ├── activity.json         # Activities
-│   ├── drawable/             # Icons & resources
-│   ├── assets/               # Images & media
-│   ├── data/                 # Sample data
-│   └── strings.xml           # String resources
+│   ├── src/                      # Java source files
+│   │   ├── SplashActivity.java
+│   │   ├── UserLoginActivity.java
+│   │   ├── UserRegisterActivity.java
+│   │   ├── AdminLoginActivity.java
+│   │   ├── UserDashboardActivity.java
+│   │   ├── ChapterNotesActivity.java
+│   │   ├── MCQTestActivity.java
+│   │   ├── ProfileActivity.java
+│   │   ├── AdminPanelActivity.java
+│   │   ├── ChapterViewHolder.java
+│   │   ├── AdminPagerAdapter.java
+│   │   ├── AdminUploadNotesFragment.java
+│   │   ├── AdminUploadPDFFragment.java
+│   │   ├── AdminUploadMCQFragment.java
+│   │   ├── AdminManageUsersFragment.java
+│   │   └── AdminAnnouncementsFragment.java
+│   ├── res/
+│   │   ├── layout/               # XML layout files
+│   │   ├── drawable/             # Drawable resources
+│   │   ├── anim/                 # Animation files
+│   │   ├── values/
+│   │   │   ├── colors.xml
+│   │   │   ├── styles.xml
+│   │   │   ├── strings.xml
+│   │   │   ├── arrays.xml
+│   │   │   ├── dimens.xml
+│   │   │   └── drawables.xml
+│   │   └── xml/
+│   │       └── app_preferences.xml
+│   ├── AndroidManifest.xml
+│   ├── view.json
+│   ├── logic.json
+│   ├── event.json
+│   └── activity.json
 ├── firebase-config/
-│   ├── google-services.json  # Firebase config
-│   └── firebase-rules.json   # Database rules
-├── documentation/
-│   ├── SETUP.md              # Setup guide
-│   ├── SCREENS.md            # Screen details
-│   └── API.md                # API documentation
-└── README.md
+│   ├── google-services.json
+│   ├── firebase-service-account.json
+│   └── database-rules.json
+├── build.gradle                  # App build configuration
+├── build.gradle.kts              # Project build configuration
+├── gradle.properties
+├── proguard-rules.pro
+├── BUILD.md                      # Build instructions
+├── SETUP.md                      # Setup guide
+├── FEATURES.md                   # Feature documentation
+└── README.md                     # Project documentation
 ```
 
-## 🚀 Installation & Usage
+## Installation & Setup
 
-### Sketchware Pro मध्ये Import करा:
-1. Sketchware Pro खोला
-2. "Import Project" निवड करा
-3. `cet-master-12th.swb` फाईल निवड करा
-4. Firebase config जोडा
-5. Build & Run करा
+### Prerequisites
+- Android SDK 21 or higher
+- Java 8 or higher
+- Gradle 7.4.2 or higher
+- Firebase project
 
-## 📋 Screens Overview
+### Quick Start
 
-| Screen | Purpose | Components |
-|--------|---------|------------|
-| Splash | App startup | Animated logo, loading |
-| Login | User authentication | Email, password, Firebase |
-| Register | New user signup | Form validation, Firebase |
-| Dashboard | Main interface | Bottom nav, subject cards |
-| Notes | Chapter content | RecyclerView, PDF viewer |
-| MCQ | Practice tests | Timer, scoring, submit |
-| Progress | Learning stats | Charts, graphs |
-| Settings | User preferences | Dark mode, notifications |
-| Admin Panel | Content management | Upload, edit, delete |
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/dbbs-web/cet-master-12th.git
+   cd cet-master-12th
+   ```
 
-## 🔐 Firebase Setup
+2. **Configure Firebase**
+   - Download `google-services.json` from Firebase Console
+   - Place it in `swb-project/` directory
 
-```json
-{
-  "apiKey": "YOUR_API_KEY",
-  "authDomain": "your-project.firebaseapp.com",
-  "projectId": "your-project",
-  "storageBucket": "your-project.appspot.com",
-  "messagingSenderId": "YOUR_SENDER_ID",
-  "appId": "YOUR_APP_ID"
-}
+3. **Build the project**
+   ```bash
+   ./gradlew clean build
+   ```
+
+4. **Run on device/emulator**
+   ```bash
+   ./gradlew installDebug
+   ```
+
+## Features
+
+### User Features
+- **Authentication**: Secure login/registration with Firebase
+- **Dashboard**: Quick access to subjects and features
+- **Study Materials**: Chapter notes, PDFs, formulas
+- **Practice Tests**: MCQ tests with timers and scoring
+- **Performance Tracking**: Statistics and progress monitoring
+- **Personalization**: Dark mode, notifications, preferences
+
+### Admin Features
+- **Content Management**: Upload notes, PDFs, MCQ tests
+- **User Management**: View and manage user accounts
+- **Announcements**: Post updates and notifications
+- **Analytics**: Track app usage and user engagement
+
+## Technology Stack
+
+- **Frontend**: Android (Java)
+- **UI Framework**: Material Design 3
+- **Backend**: Firebase Realtime Database
+- **Authentication**: Firebase Authentication
+- **Storage**: Firebase Cloud Storage
+- **Push Notifications**: Firebase Cloud Messaging
+
+## API Integration
+
+### Firebase Realtime Database Structure
+```
+users/
+  {uid}/
+    name, email, phone, role, createdAt, preferences
+
+chapters/
+  {chapterId}/
+    subject, title, description, notesUrl, createdAt
+
+mcqs/
+  {testId}/
+    title, subject, questions[], duration
+
+statistics/
+  {uid}/
+    testsTaken, accuracy, notesRead, timestamp
+
+announcements/
+  {announcementId}/
+    title, message, timestamp, postedBy
 ```
 
-## 📝 License
+## Configuration
 
-Open source for educational purposes
+### Environment Variables
+```
+FIREBASE_API_KEY=<your-api-key>
+FIREBASE_PROJECT_ID=cetmaster-12th
+FIREBASE_AUTH_DOMAIN=cetmaster-12th.firebaseapp.com
+```
 
-## 👨‍💻 Developer
+### Database Rules
+Rules are provided in `firebase-config/database-rules.json`
 
-Created with ❤️ by DBBS Web Team
+## Testing
+
+### Run Tests
+```bash
+./gradlew test
+```
+
+### Test Coverage
+```bash
+./gradlew jacocoTestReport
+```
+
+## Build & Release
+
+### Debug Build
+```bash
+./gradlew assembleDebug
+```
+
+### Release Build
+```bash
+./gradlew assembleRelease
+```
+
+## Troubleshooting
+
+### Build Issues
+- Clear Gradle cache: `./gradlew clean`
+- Invalidate Android Studio cache
+- Update SDK tools
+
+### Firebase Issues
+- Verify `google-services.json` location
+- Check Firebase project configuration
+- Enable required APIs in Firebase Console
+
+### Runtime Issues
+- Check internet connection
+- Verify Firebase credentials
+- Check database rules
+- Review logcat for errors
+
+## Documentation
+
+- [BUILD.md](BUILD.md) - Build instructions
+- [SETUP.md](SETUP.md) - Setup and configuration guide
+- [FEATURES.md](FEATURES.md) - Feature documentation
+- [Android Documentation](https://developer.android.com)
+- [Firebase Documentation](https://firebase.google.com/docs)
+
+## Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+## Version History
+
+- **v1.0.0** (Current) - Initial release
+  - User authentication
+  - Dashboard and navigation
+  - Study materials
+  - MCQ tests
+  - Admin panel
+
+## Roadmap
+
+- [ ] Video tutorials
+- [ ] Live classes integration
+- [ ] Discussion forum
+- [ ] Advanced analytics
+- [ ] Gamification (badges, leaderboards)
+- [ ] Multi-language support
+- [ ] iOS version
+
+## License
+
+This project is licensed under the MIT License - see LICENSE file for details
+
+## Support
+
+For issues and support:
+- Create an issue on GitHub
+- Email: support@cetmaster.com
+- Documentation: https://cetmaster.com/docs
+
+## Credits
+
+**Developer**: DBBS Web
+**Contact**: dbbs54102@gmail.com
+**GitHub**: https://github.com/dbbs-web
+
+## Acknowledgments
+
+- Firebase for backend services
+- Material Design for UI guidelines
+- Android community for support and resources
+
+---
+
+**Last Updated**: July 10, 2026
+**Status**: Active Development ✅

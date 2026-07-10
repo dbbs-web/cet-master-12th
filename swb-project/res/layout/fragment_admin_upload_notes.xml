@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_upload_notes_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Chapter Notes"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_subject"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_chapter_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Chapter Title"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_chapter_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Chapter Description"
+        android:gravity="top|start"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <Button
+        android:id="@+id/btn_select_file"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Select PDF File"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/primary" />
+
+    <ProgressBar
+        android:id="@+id/progress_upload"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="12dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_upload_notes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Upload Notes"
+        android:textColor="@color/white"
+        android:background="@drawable/button_primary_shape" />
+
+</LinearLayout>

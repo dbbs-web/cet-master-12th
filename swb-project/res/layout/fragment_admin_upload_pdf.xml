@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_upload_pdf_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF Papers"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_pdf_subject"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_pdf_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Paper Title"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/et_pdf_year"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Year (e.g., 2023)"
+        android:inputType="number"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <Button
+        android:id="@+id/btn_select_pdf_file"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Select PDF File"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/primary" />
+
+    <ProgressBar
+        android:id="@+id/progress_pdf_upload"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginBottom="12dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_upload_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Upload PDF"
+        android:textColor="@color/white"
+        android:background="@drawable/button_primary_shape" />
+
+</LinearLayout>
