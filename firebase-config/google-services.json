@@ -1,0 +1,9 @@
+{
+  "apiKey": "AIzaSyDxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "authDomain": "cetmaster-12th.firebaseapp.com",
+  "projectId": "cetmaster-12th",
+  "storageBucket": "cetmaster-12th.appspot.com",
+  "messagingSenderId": "123456789012",
+  "appId": "1:123456789012:android:abcdef1234567890",
+  "databaseURL": "https://cetmaster-12th-default-rtdb.firebaseio.com"
+}

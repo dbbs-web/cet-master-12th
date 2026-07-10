@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid || root.child('users').child($uid).child('role').val() === 'admin'",
+        ".write": "$uid === auth.uid",
+        "role": {
+          ".read": true,
+          ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+        }
+      }
+    },
+    "chapters": {
+      ".read": "auth != null",
+      "$chapterId": {
+        ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+      }
+    },
+    "mcqs": {
+      ".read": "auth != null",
+      "$testId": {
+        ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+      }
+    },
+    "statistics": {
+      "$uid": {
+        ".read": "$uid === auth.uid || root.child('users').child(auth.uid).child('role').val() === 'admin'",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    "announcements": {
+      ".read": "auth != null",
+      ".write": "root.child('users').child(auth.uid).child('role').val() === 'admin'"
+    }
+  }
+}
