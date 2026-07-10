@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CET Master 12th</string>
+    <string name="app_tagline">Your Complete Study Companion</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_loading">Loading...</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">User Login</string>
+    <string name="login_email_hint">Email Address</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_signup_text">Don't have an account?</string>
+    <string name="login_signup_link">Register</string>
+
+    <!-- Register Screen -->
+    <string name="register_title">Create Account</string>
+    <string name="register_name_hint">Full Name</string>
+    <string name="register_email_hint">Email Address</string>
+    <string name="register_phone_hint">Phone Number</string>
+    <string name="register_password_hint">Password</string>
+    <string name="register_confirm_password_hint">Confirm Password</string>
+    <string name="register_button">Register</string>
+
+    <!-- Admin Login -->
+    <string name="admin_login_title">Admin Login</string>
+    <string name="admin_login_email_hint">Admin Email</string>
+    <string name="admin_login_password_hint">Admin Password</string>
+    <string name="admin_login_button">Login as Admin</string>
+    <string name="admin_login_user_link">← Back to User Login</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">CET Master</string>
+    <string name="dashboard_welcome">Welcome</string>
+    <string name="subject_physics">Physics</string>
+    <string name="subject_chemistry">Chemistry</string>
+    <string name="subject_mathematics">Mathematics</string>
+    <string name="subject_biology">Biology</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="nav_downloads">Downloads</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- MCQ Test -->
+    <string name="mcq_test_title">MCQ Test</string>
+    <string name="mcq_question_number">Question</string>
+    <string name="mcq_submit">Submit</string>
+    <string name="mcq_previous">Previous</string>
+    <string name="mcq_next">Next</string>
+    <string name="mcq_result_correct">Correct!</string>
+    <string name="mcq_result_incorrect">Incorrect!</string>
+
+    <!-- Profile -->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_statistics">Statistics</string>
+    <string name="profile_settings">Settings</string>
+    <string name="profile_dark_mode">Dark Mode</string>
+    <string name="profile_notifications">Notifications</string>
+    <string name="profile_logout">Logout</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_email">Please enter email address</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_empty_password">Please enter password</string>
+    <string name="error_short_password">Password must be at least 6 characters</string>
+    <string name="error_passwords_not_match">Passwords do not match</string>
+    <string name="error_network">Network error. Please check your connection</string>
+    <string name="error_login_failed">Login failed. Please check credentials</string>
+    <string name="error_register_failed">Registration failed. Please try again</string>
+
+    <!-- Success Messages -->
+    <string name="success_login">Login successful</string>
+    <string name="success_register">Registration successful</string>
+    <string name="success_logout">Logged out successfully</string>
+
+</resources>

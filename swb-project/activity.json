@@ -1,0 +1,65 @@
+[
+  {
+    "id": "SplashActivity",
+    "name": "Splash Screen",
+    "layout": "activity_splash.xml",
+    "theme": "AppTheme.Splash",
+    "noActionBar": true,
+    "orientation": "portrait",
+    "duration": "3000"
+  },
+  {
+    "id": "UserLoginActivity",
+    "name": "User Login",
+    "layout": "activity_user_login.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "UserRegisterActivity",
+    "name": "User Register",
+    "layout": "activity_user_register.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "AdminLoginActivity",
+    "name": "Admin Login",
+    "layout": "activity_admin_login.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "UserDashboardActivity",
+    "name": "User Dashboard",
+    "layout": "activity_user_dashboard.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "ChapterNotesActivity",
+    "name": "Chapter Notes",
+    "layout": "activity_chapter_notes.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "PDFViewerActivity",
+    "name": "PDF Viewer",
+    "layout": "activity_pdf_viewer.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "MCQTestActivity",
+    "name": "MCQ Test",
+    "layout": "activity_mcq_test.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "ProfileActivity",
+    "name": "User Profile",
+    "layout": "activity_profile.xml",
+    "theme": "AppTheme"
+  },
+  {
+    "id": "AdminPanelActivity",
+    "name": "Admin Panel",
+    "layout": "activity_admin_panel.xml",
+    "theme": "AppTheme"
+  }
+]

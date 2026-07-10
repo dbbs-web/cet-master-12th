@@ -1,0 +1,123 @@
+[
+  {
+    "id": "splash_logic_1",
+    "type": "setVisibility",
+    "target": "splash_progress",
+    "visibility": "VISIBLE"
+  },
+  {
+    "id": "splash_logic_2",
+    "type": "animateView",
+    "target": "splash_logo",
+    "animation": "fade_in",
+    "duration": "1000"
+  },
+  {
+    "id": "login_logic_1",
+    "type": "validateEmail",
+    "target": "login_email",
+    "errorMessage": "Please enter a valid email"
+  },
+  {
+    "id": "login_logic_2",
+    "type": "validatePassword",
+    "target": "login_password",
+    "minLength": "6"
+  },
+  {
+    "id": "firebase_auth_1",
+    "type": "firebaseLogin",
+    "email": "login_email",
+    "password": "login_password",
+    "onSuccess": "navigate_dashboard",
+    "onFailure": "show_login_error"
+  },
+  {
+    "id": "register_logic_1",
+    "type": "validateForm",
+    "fields": ["register_name", "register_email", "register_phone", "register_password", "register_confirm_password"]
+  },
+  {
+    "id": "register_logic_2",
+    "type": "comparePasswords",
+    "password1": "register_password",
+    "password2": "register_confirm_password"
+  },
+  {
+    "id": "firebase_auth_2",
+    "type": "firebaseRegister",
+    "email": "register_email",
+    "password": "register_password",
+    "userData": {"name": "register_name", "phone": "register_phone"},
+    "onSuccess": "register_success",
+    "onFailure": "register_error"
+  },
+  {
+    "id": "dashboard_logic_1",
+    "type": "loadUserData",
+    "userId": "current_user_id"
+  },
+  {
+    "id": "dashboard_logic_2",
+    "type": "fetchSubjects",
+    "source": "firebase_database"
+  },
+  {
+    "id": "notes_logic_1",
+    "type": "fetchChapters",
+    "subject": "selected_subject",
+    "source": "firebase_database"
+  },
+  {
+    "id": "mcq_logic_1",
+    "type": "startTimer",
+    "duration": "600",
+    "target": "mcq_timer"
+  },
+  {
+    "id": "mcq_logic_2",
+    "type": "loadQuestions",
+    "testId": "selected_test_id",
+    "source": "firebase_database"
+  },
+  {
+    "id": "mcq_logic_3",
+    "type": "evaluateAnswer",
+    "userAnswer": "selected_option",
+    "correctAnswer": "correct_option"
+  },
+  {
+    "id": "profile_logic_1",
+    "type": "loadProfile",
+    "userId": "current_user_id"
+  },
+  {
+    "id": "dark_mode_logic",
+    "type": "applyTheme",
+    "theme": "dark"
+  },
+  {
+    "id": "offline_cache_logic",
+    "type": "cacheData",
+    "data": "downloaded_content",
+    "maxSize": "50MB"
+  },
+  {
+    "id": "admin_logic_1",
+    "type": "uploadFile",
+    "fileType": "pdf",
+    "destination": "firebase_storage"
+  },
+  {
+    "id": "admin_logic_2",
+    "type": "deleteContent",
+    "contentId": "selected_content_id",
+    "database": "firebase_database"
+  },
+  {
+    "id": "search_logic_1",
+    "type": "searchContent",
+    "query": "search_input",
+    "searchFields": ["title", "description", "tags"]
+  }
+]

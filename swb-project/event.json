@@ -1,0 +1,92 @@
+[
+  {
+    "eventName": "onCreate",
+    "targetId": "SplashActivity",
+    "logicList": ["splash_logic_1", "splash_logic_2"]
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "login_btn",
+    "logicList": ["login_logic_1", "login_logic_2", "firebase_auth_1"]
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "login_signup_link",
+    "action": "navigate",
+    "destination": "RegisterActivity"
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "register_btn",
+    "logicList": ["register_logic_1", "register_logic_2", "firebase_auth_2"]
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "register_back",
+    "action": "finish"
+  },
+  {
+    "eventName": "onCreate",
+    "targetId": "UserDashboardActivity",
+    "logicList": ["dashboard_logic_1", "dashboard_logic_2"]
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "subject_physics",
+    "action": "navigate",
+    "destination": "ChapterNotesActivity",
+    "extras": {"subject": "Physics"}
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "subject_chemistry",
+    "action": "navigate",
+    "destination": "ChapterNotesActivity",
+    "extras": {"subject": "Chemistry"}
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "subject_math",
+    "action": "navigate",
+    "destination": "ChapterNotesActivity",
+    "extras": {"subject": "Mathematics"}
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "subject_biology",
+    "action": "navigate",
+    "destination": "ChapterNotesActivity",
+    "extras": {"subject": "Biology"}
+  },
+  {
+    "eventName": "onCreate",
+    "targetId": "ChapterNotesActivity",
+    "logicList": ["notes_logic_1"]
+  },
+  {
+    "eventName": "onCreate",
+    "targetId": "MCQTestActivity",
+    "logicList": ["mcq_logic_1", "mcq_logic_2"]
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "mcq_next_btn",
+    "logicList": ["mcq_logic_3"]
+  },
+  {
+    "eventName": "onCreate",
+    "targetId": "ProfileActivity",
+    "logicList": ["profile_logic_1"]
+  },
+  {
+    "eventName": "onToggle",
+    "targetId": "profile_dark_mode_toggle",
+    "logicList": ["dark_mode_logic"]
+  },
+  {
+    "eventName": "onViewClick",
+    "targetId": "profile_logout",
+    "action": "firebaseLogout",
+    "navigateTo": "UserLoginActivity"
+  }
+]

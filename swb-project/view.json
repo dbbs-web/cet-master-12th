@@ -1,0 +1,481 @@
+[
+  {
+    "xmlName": "activity_splash.xml",
+    "type": "LinearLayout",
+    "id": "splash_root",
+    "orientation": "vertical",
+    "gravity": "center",
+    "backgroundColor": "#1E3A8A",
+    "children": [
+      {
+        "type": "ImageView",
+        "id": "splash_logo",
+        "src": "@drawable/ic_app_logo",
+        "scaleType": "centerInside",
+        "layout": {"width": "200dp", "height": "200dp"}
+      },
+      {
+        "type": "TextView",
+        "id": "splash_title",
+        "text": "CET Master 12th",
+        "textSize": "28sp",
+        "textColor": "#FFFFFF",
+        "textStyle": "bold",
+        "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "16dp"}
+      },
+      {
+        "type": "TextView",
+        "id": "splash_subtitle",
+        "text": "Your Complete Study Companion",
+        "textSize": "14sp",
+        "textColor": "#B3B3B3",
+        "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "8dp"}
+      },
+      {
+        "type": "ProgressBar",
+        "id": "splash_progress",
+        "style": "?attr/progressBarStyle",
+        "layout": {"width": "50dp", "height": "50dp", "marginTop": "40dp"}
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_user_login.xml",
+    "type": "LinearLayout",
+    "id": "login_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "login_header",
+        "orientation": "vertical",
+        "gravity": "center",
+        "backgroundColor": "#1E3A8A",
+        "layout": {"width": "match_parent", "height": "200dp"},
+        "children": [
+          {"type": "ImageView", "id": "login_logo", "src": "@drawable/ic_app_logo", "layout": {"width": "100dp", "height": "100dp"}},
+          {"type": "TextView", "id": "login_title", "text": "User Login", "textSize": "24sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "8dp"}}
+        ]
+      },
+      {
+        "type": "ScrollView",
+        "id": "login_scroll",
+        "layout": {"width": "match_parent", "height": "0dp", "weight": "1"},
+        "children": [
+          {
+            "type": "LinearLayout",
+            "id": "login_content",
+            "orientation": "vertical",
+            "padding": "24dp",
+            "layout": {"width": "match_parent", "height": "wrap_content"},
+            "children": [
+              {
+                "type": "EditText",
+                "id": "login_email",
+                "hint": "Email Address",
+                "inputType": "textEmailAddress",
+                "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}
+              },
+              {
+                "type": "EditText",
+                "id": "login_password",
+                "hint": "Password",
+                "inputType": "textPassword",
+                "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "24dp"}
+              },
+              {
+                "type": "Button",
+                "id": "login_btn",
+                "text": "Login",
+                "backgroundColor": "#3B82F6",
+                "textColor": "#FFFFFF",
+                "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}
+              },
+              {
+                "type": "LinearLayout",
+                "id": "login_footer",
+                "orientation": "horizontal",
+                "gravity": "center",
+                "layout": {"width": "match_parent", "height": "wrap_content"},
+                "children": [
+                  {"type": "TextView", "id": "login_signup_text", "text": "Don't have an account? ", "textSize": "14sp", "textColor": "#666666"},
+                  {"type": "TextView", "id": "login_signup_link", "text": "Register", "textSize": "14sp", "textColor": "#3B82F6", "textStyle": "bold"}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_user_register.xml",
+    "type": "LinearLayout",
+    "id": "register_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "register_header",
+        "orientation": "horizontal",
+        "layout": {"width": "match_parent", "height": "56dp", "backgroundColor": "#1E3A8A"},
+        "children": [
+          {"type": "ImageButton", "id": "register_back", "src": "@drawable/ic_back", "layout": {"width": "56dp", "height": "56dp"}},
+          {"type": "TextView", "id": "register_title", "text": "Register", "textSize": "20sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1", "gravity": "center_vertical", "marginLeft": "8dp"}}
+        ]
+      },
+      {
+        "type": "ScrollView",
+        "id": "register_scroll",
+        "layout": {"width": "match_parent", "height": "match_parent"},
+        "children": [
+          {
+            "type": "LinearLayout",
+            "id": "register_content",
+            "orientation": "vertical",
+            "padding": "24dp",
+            "layout": {"width": "match_parent", "height": "wrap_content"},
+            "children": [
+              {"type": "EditText", "id": "register_name", "hint": "Full Name", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}},
+              {"type": "EditText", "id": "register_email", "hint": "Email Address", "inputType": "textEmailAddress", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}},
+              {"type": "EditText", "id": "register_phone", "hint": "Phone Number", "inputType": "phone", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}},
+              {"type": "EditText", "id": "register_password", "hint": "Password", "inputType": "textPassword", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}},
+              {"type": "EditText", "id": "register_confirm_password", "hint": "Confirm Password", "inputType": "textPassword", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "24dp"}},
+              {"type": "Button", "id": "register_btn", "text": "Register", "backgroundColor": "#3B82F6", "textColor": "#FFFFFF", "layout": {"width": "match_parent", "height": "48dp"}}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_admin_login.xml",
+    "type": "LinearLayout",
+    "id": "admin_login_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "admin_login_header",
+        "orientation": "vertical",
+        "gravity": "center",
+        "backgroundColor": "#DC2626",
+        "layout": {"width": "match_parent", "height": "200dp"},
+        "children": [
+          {"type": "ImageView", "id": "admin_login_logo", "src": "@drawable/ic_admin", "layout": {"width": "100dp", "height": "100dp"}},
+          {"type": "TextView", "id": "admin_login_title", "text": "Admin Login", "textSize": "24sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "8dp"}}
+        ]
+      },
+      {
+        "type": "LinearLayout",
+        "id": "admin_login_content",
+        "orientation": "vertical",
+        "padding": "24dp",
+        "layout": {"width": "match_parent", "height": "0dp", "weight": "1"},
+        "children": [
+          {"type": "EditText", "id": "admin_login_email", "hint": "Admin Email", "inputType": "textEmailAddress", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}},
+          {"type": "EditText", "id": "admin_login_password", "hint": "Admin Password", "inputType": "textPassword", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "24dp"}},
+          {"type": "Button", "id": "admin_login_btn", "text": "Login as Admin", "backgroundColor": "#DC2626", "textColor": "#FFFFFF", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "16dp"}},
+          {"type": "TextView", "id": "admin_login_user_link", "text": "← Back to User Login", "textSize": "14sp", "textColor": "#3B82F6", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content"}}
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_user_dashboard.xml",
+    "type": "LinearLayout",
+    "id": "dashboard_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "dashboard_header",
+        "orientation": "horizontal",
+        "gravity": "center_vertical",
+        "backgroundColor": "#1E3A8A",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "TextView", "id": "dashboard_title", "text": "CET Master", "textSize": "20sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1"}},
+          {"type": "ImageButton", "id": "dashboard_search", "src": "@drawable/ic_search", "layout": {"width": "40dp", "height": "40dp", "marginRight": "8dp"}},
+          {"type": "ImageButton", "id": "dashboard_settings", "src": "@drawable/ic_settings", "layout": {"width": "40dp", "height": "40dp"}}
+        ]
+      },
+      {
+        "type": "ScrollView",
+        "id": "dashboard_scroll",
+        "layout": {"width": "match_parent", "height": "0dp", "weight": "1"},
+        "children": [
+          {
+            "type": "LinearLayout",
+            "id": "dashboard_content",
+            "orientation": "vertical",
+            "padding": "16dp",
+            "layout": {"width": "match_parent", "height": "wrap_content"},
+            "children": [
+              {
+                "type": "LinearLayout",
+                "id": "dashboard_user_card",
+                "orientation": "horizontal",
+                "gravity": "center_vertical",
+                "backgroundColor": "#E0E7FF",
+                "padding": "16dp",
+                "layout": {"width": "match_parent", "height": "80dp", "marginBottom": "16dp", "cornerRadius": "8dp"},
+                "children": [
+                  {"type": "ImageView", "id": "dashboard_avatar", "src": "@drawable/ic_user", "layout": {"width": "60dp", "height": "60dp"}},
+                  {
+                    "type": "LinearLayout",
+                    "id": "dashboard_user_info",
+                    "orientation": "vertical",
+                    "layout": {"width": "0dp", "height": "wrap_content", "weight": "1", "marginLeft": "16dp"},
+                    "children": [
+                      {"type": "TextView", "id": "dashboard_user_name", "text": "Welcome, User", "textSize": "16sp", "textColor": "#1E3A8A", "textStyle": "bold"},
+                      {"type": "TextView", "id": "dashboard_user_email", "text": "user@example.com", "textSize": "12sp", "textColor": "#666666", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "GridLayout",
+                "id": "dashboard_subjects",
+                "columnCount": "2",
+                "layout": {"width": "match_parent", "height": "wrap_content", "marginBottom": "16dp"},
+                "children": [
+                  {"type": "CardView", "id": "subject_physics", "backgroundColor": "#3B82F6", "layout": {"width": "0dp", "height": "120dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "TextView", "text": "Physics", "textSize": "18sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "match_parent", "height": "match_parent", "gravity": "center"}}]},
+                  {"type": "CardView", "id": "subject_chemistry", "backgroundColor": "#10B981", "layout": {"width": "0dp", "height": "120dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "TextView", "text": "Chemistry", "textSize": "18sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "match_parent", "height": "match_parent", "gravity": "center"}}]},
+                  {"type": "CardView", "id": "subject_math", "backgroundColor": "#F59E0B", "layout": {"width": "0dp", "height": "120dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "TextView", "text": "Mathematics", "textSize": "18sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "match_parent", "height": "match_parent", "gravity": "center"}}]},
+                  {"type": "CardView", "id": "subject_biology", "backgroundColor": "#8B5CF6", "layout": {"width": "0dp", "height": "120dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "TextView", "text": "Biology", "textSize": "18sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "match_parent", "height": "match_parent", "gravity": "center"}}]}
+                ]
+              },
+              {
+                "type": "LinearLayout",
+                "id": "dashboard_quick_links",
+                "orientation": "horizontal",
+                "layout": {"width": "match_parent", "height": "wrap_content"},
+                "children": [
+                  {"type": "CardView", "id": "quick_notes", "layout": {"width": "0dp", "height": "80dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "gravity": "center", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "ImageView", "src": "@drawable/ic_notes", "layout": {"width": "32dp", "height": "32dp"}}, {"type": "TextView", "text": "Notes", "textSize": "12sp", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]},
+                  {"type": "CardView", "id": "quick_mcq", "layout": {"width": "0dp", "height": "80dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "gravity": "center", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "ImageView", "src": "@drawable/ic_quiz", "layout": {"width": "32dp", "height": "32dp"}}, {"type": "TextView", "text": "MCQ Test", "textSize": "12sp", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]},
+                  {"type": "CardView", "id": "quick_papers", "layout": {"width": "0dp", "height": "80dp", "weight": "1", "margin": "8dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "gravity": "center", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "ImageView", "src": "@drawable/ic_paper", "layout": {"width": "32dp", "height": "32dp"}}, {"type": "TextView", "text": "Papers", "textSize": "12sp", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BottomNavigationView",
+        "id": "dashboard_bottom_nav",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "items": [
+          {"id": "nav_home", "title": "Home", "icon": "@drawable/ic_home"},
+          {"id": "nav_bookmarks", "title": "Bookmarks", "icon": "@drawable/ic_bookmark"},
+          {"id": "nav_downloads", "title": "Downloads", "icon": "@drawable/ic_download"},
+          {"id": "nav_profile", "title": "Profile", "icon": "@drawable/ic_profile"}
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_chapter_notes.xml",
+    "type": "LinearLayout",
+    "id": "notes_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "notes_header",
+        "orientation": "horizontal",
+        "gravity": "center_vertical",
+        "backgroundColor": "#1E3A8A",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "ImageButton", "id": "notes_back", "src": "@drawable/ic_back", "layout": {"width": "40dp", "height": "40dp"}},
+          {"type": "TextView", "id": "notes_title", "text": "Physics Notes", "textSize": "18sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1", "marginLeft": "8dp"}}
+        ]
+      },
+      {
+        "type": "RecyclerView",
+        "id": "notes_recycler",
+        "layout": {"width": "match_parent", "height": "match_parent"},
+        "items": [
+          {"type": "CardView", "layout": {"width": "match_parent", "height": "100dp", "margin": "8dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "padding": "12dp", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "TextView", "text": "Chapter 1: Introduction to Physics", "textSize": "16sp", "textColor": "#1E3A8A", "textStyle": "bold"}, {"type": "TextView", "text": "Tap to view detailed notes and concepts", "textSize": "12sp", "textColor": "#666666", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]}
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_pdf_viewer.xml",
+    "type": "LinearLayout",
+    "id": "pdf_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "pdf_header",
+        "orientation": "horizontal",
+        "gravity": "center_vertical",
+        "backgroundColor": "#1E3A8A",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "ImageButton", "id": "pdf_back", "src": "@drawable/ic_back", "layout": {"width": "40dp", "height": "40dp"}},
+          {"type": "TextView", "id": "pdf_title", "text": "PDF Document", "textSize": "16sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1", "marginLeft": "8dp"}},
+          {"type": "ImageButton", "id": "pdf_bookmark", "src": "@drawable/ic_bookmark", "layout": {"width": "40dp", "height": "40dp"}}
+        ]
+      },
+      {
+        "type": "WebView",
+        "id": "pdf_viewer",
+        "layout": {"width": "match_parent", "height": "0dp", "weight": "1"}
+      },
+      {
+        "type": "LinearLayout",
+        "id": "pdf_controls",
+        "orientation": "horizontal",
+        "gravity": "center",
+        "backgroundColor": "#F5F5F5",
+        "padding": "8dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "ImageButton", "id": "pdf_prev", "src": "@drawable/ic_prev", "layout": {"width": "40dp", "height": "40dp"}},
+          {"type": "TextView", "id": "pdf_page_info", "text": "Page 1 of 10", "textSize": "14sp", "textColor": "#666666", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1", "gravity": "center"}},
+          {"type": "ImageButton", "id": "pdf_next", "src": "@drawable/ic_next", "layout": {"width": "40dp", "height": "40dp"}}
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_mcq_test.xml",
+    "type": "LinearLayout",
+    "id": "mcq_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "mcq_header",
+        "orientation": "horizontal",
+        "gravity": "center_vertical",
+        "backgroundColor": "#1E3A8A",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "TextView", "id": "mcq_timer", "text": "10:00", "textSize": "18sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content"}},
+          {"type": "TextView", "id": "mcq_progress", "text": "Q 1/20", "textSize": "14sp", "textColor": "#E0E7FF", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1", "gravity": "center"}},
+          {"type": "ImageButton", "id": "mcq_exit", "src": "@drawable/ic_close", "layout": {"width": "40dp", "height": "40dp"}}
+        ]
+      },
+      {
+        "type": "ScrollView",
+        "id": "mcq_scroll",
+        "layout": {"width": "match_parent", "height": "0dp", "weight": "1"},
+        "children": [
+          {
+            "type": "LinearLayout",
+            "id": "mcq_content",
+            "orientation": "vertical",
+            "padding": "16dp",
+            "layout": {"width": "match_parent", "height": "wrap_content"},
+            "children": [
+              {"type": "TextView", "id": "mcq_question", "text": "What is the SI unit of force?", "textSize": "16sp", "textColor": "#1E3A8A", "textStyle": "bold", "layout": {"width": "match_parent", "height": "wrap_content", "marginBottom": "24dp"}},
+              {"type": "RadioButton", "id": "mcq_option_a", "text": "A) Joule", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "8dp"}},
+              {"type": "RadioButton", "id": "mcq_option_b", "text": "B) Newton", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "8dp"}},
+              {"type": "RadioButton", "id": "mcq_option_c", "text": "C) Pascal", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "8dp"}},
+              {"type": "RadioButton", "id": "mcq_option_d", "text": "D) Watt", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "24dp"}}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "LinearLayout",
+        "id": "mcq_buttons",
+        "orientation": "horizontal",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "Button", "id": "mcq_prev_btn", "text": "Previous", "layout": {"width": "0dp", "height": "48dp", "weight": "1", "marginRight": "8dp"}},
+          {"type": "Button", "id": "mcq_next_btn", "text": "Next", "backgroundColor": "#3B82F6", "textColor": "#FFFFFF", "layout": {"width": "0dp", "height": "48dp", "weight": "1", "marginLeft": "8dp"}}
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_profile.xml",
+    "type": "LinearLayout",
+    "id": "profile_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "profile_header",
+        "orientation": "vertical",
+        "gravity": "center",
+        "backgroundColor": "#1E3A8A",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "200dp"},
+        "children": [
+          {"type": "ImageView", "id": "profile_avatar", "src": "@drawable/ic_user", "layout": {"width": "100dp", "height": "100dp"}},
+          {"type": "TextView", "id": "profile_name", "text": "User Name", "textSize": "20sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "8dp"}},
+          {"type": "TextView", "id": "profile_email", "text": "user@example.com", "textSize": "12sp", "textColor": "#E0E7FF", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}
+        ]
+      },
+      {
+        "type": "ScrollView",
+        "id": "profile_scroll",
+        "layout": {"width": "match_parent", "height": "0dp", "weight": "1"},
+        "children": [
+          {
+            "type": "LinearLayout",
+            "id": "profile_content",
+            "orientation": "vertical",
+            "padding": "16dp",
+            "layout": {"width": "match_parent", "height": "wrap_content"},
+            "children": [
+              {"type": "TextView", "text": "Statistics", "textSize": "16sp", "textColor": "#1E3A8A", "textStyle": "bold", "layout": {"width": "match_parent", "height": "wrap_content", "marginBottom": "12dp"}},
+              {"type": "LinearLayout", "orientation": "horizontal", "layout": {"width": "match_parent", "height": "80dp", "marginBottom": "16dp"}, "children": [{"type": "CardView", "layout": {"width": "0dp", "height": "80dp", "weight": "1", "margin": "4dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "gravity": "center", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "TextView", "text": "45", "textSize": "20sp", "textColor": "#3B82F6", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content"}}, {"type": "TextView", "text": "Tests Taken", "textSize": "11sp", "textColor": "#666666", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]}, {"type": "CardView", "layout": {"width": "0dp", "height": "80dp", "weight": "1", "margin": "4dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "gravity": "center", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "TextView", "text": "78%", "textSize": "20sp", "textColor": "#10B981", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content"}}, {"type": "TextView", "text": "Accuracy", "textSize": "11sp", "textColor": "#666666", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]}, {"type": "CardView", "layout": {"width": "0pt", "height": "80dp", "weight": "1", "margin": "4dp"}, "children": [{"type": "LinearLayout", "orientation": "vertical", "gravity": "center", "layout": {"width": "match_parent", "height": "match_parent"}, "children": [{"type": "TextView", "text": "234", "textSize": "20sp", "textColor": "#F59E0B", "textStyle": "bold", "layout": {"width": "wrap_content", "height": "wrap_content"}}, {"type": "TextView", "text": "Notes Read", "textSize": "11sp", "textColor": "#666666", "layout": {"width": "wrap_content", "height": "wrap_content", "marginTop": "4dp"}}]}]}]},
+              {"type": "TextView", "text": "Settings", "textSize": "16sp", "textColor": "#1E3A8A", "textStyle": "bold", "layout": {"width": "match_parent", "height": "wrap_content", "marginBottom": "12dp", "marginTop": "16dp"}},
+              {"type": "LinearLayout", "orientation": "horizontal", "gravity": "center_vertical", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "8dp", "paddingLeft": "16dp", "paddingRight": "16dp", "backgroundColor": "#F5F5F5"}, "children": [{"type": "TextView", "text": "Dark Mode", "textSize": "14sp", "textColor": "#212121", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1"}}, {"type": "Switch", "id": "profile_dark_mode_toggle", "layout": {"width": "wrap_content", "height": "wrap_content"}}]},
+              {"type": "LinearLayout", "orientation": "horizontal", "gravity": "center_vertical", "layout": {"width": "match_parent", "height": "48dp", "marginBottom": "8dp", "paddingLeft": "16dp", "paddingRight": "16dp", "backgroundColor": "#F5F5F5"}, "children": [{"type": "TextView", "text": "Notifications", "textSize": "14sp", "textColor": "#212121", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1"}}, {"type": "Switch", "id": "profile_notifications_toggle", "layout": {"width": "wrap_content", "height": "wrap_content"}}]},
+              {"type": "Button", "id": "profile_logout", "text": "Logout", "backgroundColor": "#DC2626", "textColor": "#FFFFFF", "layout": {"width": "match_parent", "height": "48dp", "marginTop": "24dp"}}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "xmlName": "activity_admin_panel.xml",
+    "type": "LinearLayout",
+    "id": "admin_root",
+    "orientation": "vertical",
+    "backgroundColor": "#FFFFFF",
+    "children": [
+      {
+        "type": "LinearLayout",
+        "id": "admin_header",
+        "orientation": "horizontal",
+        "gravity": "center_vertical",
+        "backgroundColor": "#DC2626",
+        "padding": "16dp",
+        "layout": {"width": "match_parent", "height": "56dp"},
+        "children": [
+          {"type": "TextView", "id": "admin_panel_title", "text": "Admin Panel", "textSize": "20sp", "textColor": "#FFFFFF", "textStyle": "bold", "layout": {"width": "0dp", "height": "wrap_content", "weight": "1"}},
+          {"type": "ImageButton", "id": "admin_menu", "src": "@drawable/ic_menu", "layout": {"width": "40dp", "height": "40dp"}}
+        ]
+      },
+      {
+        "type": "ViewPager",
+        "id": "admin_pager",
+        "layout": {"width": "match_parent", "height": "match_parent"}
+      }
+    ]
+  }
+]
