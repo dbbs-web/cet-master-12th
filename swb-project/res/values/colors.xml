@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1E3A8A</color>
+    <color name="primary_light">#3B82F6</color>
+    <color name="primary_dark">#1E40AF</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#60A5FA</color>
+    <color name="secondary_light">#93C5FD</color>
+    <color name="secondary_dark">#3B82F6</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent">#3B82F6</color>
+    <color name="accent_dark">#1E40AF</color>
+    
+    <!-- Subject Colors -->
+    <color name="physics_color">#3B82F6</color>
+    <color name="chemistry_color">#10B981</color>
+    <color name="mathematics_color">#F59E0B</color>
+    <color name="biology_color">#8B5CF6</color>
+    
+    <!-- Admin Colors -->
+    <color name="admin_primary">#DC2626</color>
+    <color name="admin_light">#EF4444</color>
+    
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_50">#F9FAFB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_200">#E5E7EB</color>
+    <color name="gray_300">#D1D5DB</color>
+    <color name="gray_400">#9CA3AF</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_600">#4B5563</color>
+    <color name="gray_700">#374151</color>
+    <color name="gray_800">#1F2937</color>
+    <color name="gray_900">#111827</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_disabled">#CCCCCC</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Background Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="surface_dark">#1E1E1E</color>
+    
+    <!-- Success, Warning, Error -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#DC2626</color>
+    <color name="info">#3B82F6</color>
+    
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#80FFFFFF</color>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Icon -->
+    <item name="ic_launcher" type="drawable">@drawable/ic_app_logo</item>
+    <item name="ic_launcher_round" type="drawable">@drawable/ic_app_logo_round</item>
+    
+    <!-- Navigation Icons -->
+    <item name="ic_home" type="drawable">@drawable/ic_home_24</item>
+    <item name="ic_bookmark" type="drawable">@drawable/ic_bookmark_24</item>
+    <item name="ic_download" type="drawable">@drawable/ic_download_24</item>
+    <item name="ic_profile" type="drawable">@drawable/ic_profile_24</item>
+    
+    <!-- Common Icons -->
+    <item name="ic_back" type="drawable">@drawable/ic_back_24</item>
+    <item name="ic_close" type="drawable">@drawable/ic_close_24</item>
+    <item name="ic_search" type="drawable">@drawable/ic_search_24</item>
+    <item name="ic_settings" type="drawable">@drawable/ic_settings_24</item>
+    <item name="ic_menu" type="drawable">@drawable/ic_menu_24</item>
+    
+    <!-- Subject Icons -->
+    <item name="ic_physics" type="drawable">@drawable/ic_physics_24</item>
+    <item name="ic_chemistry" type="drawable">@drawable/ic_chemistry_24</item>
+    <item name="ic_math" type="drawable">@drawable/ic_math_24</item>
+    <item name="ic_biology" type="drawable">@drawable/ic_biology_24</item>
+    
+    <!-- Feature Icons -->
+    <item name="ic_notes" type="drawable">@drawable/ic_notes_24</item>
+    <item name="ic_quiz" type="drawable">@drawable/ic_quiz_24</item>
+    <item name="ic_paper" type="drawable">@drawable/ic_paper_24</item>
+    <item name="ic_formula" type="drawable">@drawable/ic_formula_24</item>
+    <item name="ic_admin" type="drawable">@drawable/ic_admin_24</item>
+    <item name="ic_user" type="drawable">@drawable/ic_user_24</item>
+    
+    <!-- Navigation Controls -->
+    <item name="ic_prev" type="drawable">@drawable/ic_prev_24</item>
+    <item name="ic_next" type="drawable">@drawable/ic_next_24</item>
+</resources>
